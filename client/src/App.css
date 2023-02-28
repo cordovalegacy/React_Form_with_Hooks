@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+
+form{
+  padding: 1%;
+  width: 50%;
+  margin: 0px auto;
+}
+
+.form-group{
+  background: linear-gradient(to right, whitesmoke, silver, whitesmoke);
+  width: 100%;
+  padding: 5%;
+  border: 1px ridge silver;
+  margin: 5px auto;
+}
+
+.form-group label{
+  width: 50%;
+} 
+
+.form-group input{
+  width: 50%;
+}
+
+input[type=submit]{
+  background-color: silver;
+  border: 1px solid gray;
+  width: 25%;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+input[type=submit]:hover{
+  background-color: gold;
+}
+
+ul{
+  list-style: none;
+  text-align: left;
+  width: 50%;
+  margin: 5px auto;
+  padding: 1%;
+}

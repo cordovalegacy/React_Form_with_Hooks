@@ -1,5 +1,5 @@
 import './App.css';
-import {useState} from 'react'
+import { useState } from 'react'
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
   const [password, setPassword] = useState("")
   const [confirmPassword, setConfirmPassword] = useState("")
 
-  const user = {firstName, lastName, email, password, confirmPassword}
+  const user = { firstName, lastName, email, password, confirmPassword }
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -24,27 +24,27 @@ function App() {
     <div className="App">
       {user.firstName == "" ? <h1>Welcome!</h1> : <h1>Welcome, {user.firstName}!</h1>}
       <form onSubmit={submitHandler}>
-      <div className='form-group'>
-        <label htmlFor='firstName'>First Name: </label>
-        <input type='text' value={user.firstName} onChange = {(e) => {setFirstName(e.target.value)}} />
-      </div>
-      <div className='form-group'>
-        <label htmlFor='lastName'>Last Name: </label>
-        <input type='text' value={user.lastName} onChange = {(e) => {setLastName(e.target.value)}} />
-      </div>
-      <div className='form-group'>
-        <label htmlFor='email'>Email: </label>
-        <input type='text' value={user.email} onChange = {(e) => {setEmail(e.target.value)}} />
-      </div>
-      <div className='form-group'>
-        <label htmlFor='password'>Password: </label>
-        <input type='text' value={user.password} onChange = {(e) => {setPassword(e.target.value)}} />
-      </div>
-      <div className='form-group'>
-        <label htmlFor='confirmPassword'>Confirm Password: </label>
-        <input type='text' value={user.confirmPassword} onChange = {(e) => {setConfirmPassword(e.target.value)}} />
-      </div>
-      <input type='submit' value="Create" />
+        <div className='form-group'>
+          <label htmlFor='firstName'>First Name: </label>
+          <input type='text' value={user.firstName} onChange={(e) => { setFirstName(e.target.value) }} />
+        </div>
+        <div className='form-group'>
+          <label htmlFor='lastName'>Last Name: </label>
+          <input type='text' value={user.lastName} onChange={(e) => { setLastName(e.target.value) }} />
+        </div>
+        <div className='form-group'>
+          <label htmlFor='email'>Email Address: </label>
+          <input type='text' value={user.email} onChange={(e) => { setEmail(e.target.value) }} />
+        </div>
+        <div className='form-group'>
+          <label htmlFor='password'>Password: </label>
+          <input type='text' value={user.password} onChange={(e) => { setPassword(e.target.value) }} />
+        </div>
+        <div className='form-group'>
+          <label htmlFor='confirmPassword'>Confirm Password: </label>
+          <input type='text' value={user.confirmPassword} onChange={(e) => { setConfirmPassword(e.target.value) }} />
+        </div>
+        <input type='submit' value="Create" />
       </form>
       <ul>
         <li>First Name: {user.firstName}</li>

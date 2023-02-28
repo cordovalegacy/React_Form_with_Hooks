@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgba(17, 17, 196, 0.546);
 }
 
 form{
@@ -10,23 +11,25 @@ form{
 
 .form-group{
   background: linear-gradient(to right, whitesmoke, silver, whitesmoke);
-  width: 100%;
-  padding: 5%;
-  border: 1px ridge silver;
-  margin: 5px auto;
+  display: flex;
+  padding: 2%;
+  justify-content: space-around;
+  margin: 10px;
+  border: 2px ridge blue;
 }
 
 .form-group label{
-  width: 50%;
+  width: 25%;
+  text-align: right;
 } 
 
 .form-group input{
-  width: 50%;
+  width: 40%;
 }
 
 input[type=submit]{
   background-color: silver;
-  border: 1px solid gray;
+  border: 1px solid blue;
   width: 25%;
   padding: 1%;
   border-radius: 5px;
